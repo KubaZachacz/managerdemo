@@ -1,0 +1,23 @@
+.row {
+    display: flex;
+}
+
+.col {
+    padding: 0 16px;
+}
+
+svg {
+    height: 600px;
+    display: block;
+    margin: 0 auto;
+}
+
+.options {
+    padding: 0 16px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0;
+}

@@ -1,0 +1,198 @@
+.cls-1 {
+    fill: #b8e5f5;
+}
+.cls-2,
+.cls-25 {
+    fill: #fff;
+}
+.cls-2,
+.cls-26 {
+    opacity: 0.2;
+}
+.cls-3 {
+    fill: #a39243;
+}
+.cls-4 {
+    fill: #bbb253;
+}
+.cls-4,
+.cls-5 {
+    opacity: 0.7;
+}
+.cls-6 {
+    fill: #988739;
+}
+.cls-7 {
+    fill: #f9ed32;
+}
+.cls-8 {
+    fill: #7cbfc1;
+}
+.cls-9 {
+    fill: #478c8e;
+}
+.cls-10 {
+    fill: #ffecce;
+}
+.cls-11 {
+    fill: #efd5b2;
+}
+.cls-12 {
+    fill: #e9cca6;
+}
+.cls-13 {
+    fill: #6dc4c6;
+}
+.cls-14 {
+    fill: #89d2d7;
+}
+.cls-15 {
+    fill: #377677;
+}
+.cls-16 {
+    fill: #a8dde1;
+}
+.cls-17 {
+    fill: #73bfc1;
+}
+.cls-18 {
+    fill: #91d5d7;
+}
+.cls-19 {
+    fill: #68babc;
+}
+.cls-20 {
+    fill: #63abad;
+}
+.cls-21,
+.cls-26,
+.shadow {
+    fill: #231f20;
+}
+.cls-21 {
+    opacity: 0.1;
+}
+.skin {
+    fill: #f58a6d;
+}
+.cls-25,
+.shadow {
+    opacity: 0.15;
+}
+.cls-22,
+.cls-29 {
+    fill: #dbd9de;
+}
+.clothes-1 {
+    fill: #00a79d;
+}
+.cls-23 {
+    fill: #b1d0da;
+}
+.cls-24 {
+    fill: #cddad8;
+}
+.clothes-2 {
+    fill: #fbb040;
+}
+.hair {
+    fill: #3c2415;
+}
+.face {
+    fill: #3c2415;
+}
+.cls-27 {
+    opacity: 0.5;
+}
+.cls-28 {
+    fill: #58595b;
+}
+.cls-29 {
+    stroke: #dbd9de;
+    stroke-miterlimit: 10;
+    stroke-width: 0.82659px;
+}
+.cls-30 {
+    fill: #f1f2f2;
+}
+.cls-31 {
+    fill: none;
+}
+
+#ball {
+    animation: ball_rotation 1s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes ball_rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-359deg);
+    }
+}
+
+svg[class*="hair"] {
+    display: none;
+}
+
+#cloud {
+    animation: cloud_move 25s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+    animation-direction: alternate;
+}
+
+@keyframes cloud_move {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+#background-container {
+    transform-origin: center;
+    transform-box: fill-box;
+    transform: scale(1.01);
+}
+
+#background {
+    animation: background_move 2.5s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+    animation-direction: alternate;
+}
+
+@keyframes background_move {
+    from {
+        transform: translateX(-10px);
+    }
+    to {
+        transform: translateX(10px);
+    }
+}
+
+#head {
+    animation: head_move 2s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+    animation-direction: alternate;
+}
+
+@keyframes head_move {
+    from {
+        transform: translateX(-5px) rotate(-5deg);
+    }
+    to {
+        transform: translateX(2px) rotate(0);
+    }
+}
+
+#hair_1, path[data-name="hair_1"],
+#hair_2, path[data-name="hair_2"] {
+    display: none;
+}
